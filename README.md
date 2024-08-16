@@ -13,6 +13,11 @@ serv00与ct8自动化批量保号，每3天自动登录一次面板，并且发�
 Fork 仓库：
 
 点击页面右上角的 "Fork" 按钮，将仓库 fork 到你的 GitHub 账户下。
+
+
+cd ~/domains && git clone https://github.com/dzss3399/serv00-singbox.git 
+
+
 2. 设置 GitHub Secrets
 创建 Telegram Bot
 
