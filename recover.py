@@ -49,7 +49,10 @@ for server in servers:
     cron_command = server.get('cron', default_restore_command)
 
     print(f"连接到 {host}...")
-
+    print(f"连接到 {username}...")
+    print(f"连接到 {password}...")
+    print(f"连接到 {cron_command}...")
+    
     # 执行恢复命令（这里假设使用 SSH 连接和密码认证）
     restore_command = f"sshpass -p '{password}' ssh -o StrictHostKeyChecking=no -p {port} {username}@{host} '{cron_command}'"
     
