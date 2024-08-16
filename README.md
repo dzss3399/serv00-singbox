@@ -17,6 +17,14 @@ Fork 仓库：
 
 cd ~/domains && git clone https://github.com/dzss3399/serv00-singbox.git 
 
+https://github.com/yixiu001/serv00-si...
+serv00 搭建sing-box reality + hy2 + vmess-argo +tuic5四合一协议代理脚本以及批量保活方法
+
+新建一个TCP端口以及两个UDP端口，然后在根目录下载yixiu.sh文件修改里面端口内容，执行chmod 777 yixiu.sh给到执行权限，输入./yixiu.sh即可
+
+保活方法
+参考 https://github.com/yixiu001/serv00-sc... 文档内容
+
 
 2. 设置 GitHub Secrets
 创建 Telegram Bot
