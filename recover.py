@@ -52,6 +52,8 @@ for server in servers:
 
     # 执行恢复命令（这里假设使用 SSH 连接和密码认证）
     restore_command = f"sshpass -p '{password}' ssh -o StrictHostKeyChecking=no -p {port} {username}@{host} '{cron_command}'"
+
+   print(restore_command)
     try:
         output = subprocess.check_output(restore_command, shell=True, stderr=subprocess.STDOUT)
         summary_message += f"\n成功恢复 {host} 上的 vless 服务：\n{output.decode('utf-8')}"
